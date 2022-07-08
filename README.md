@@ -20,7 +20,7 @@ Make a "What is my IP" website that works with both IPv4 and IPv6 addresses. Req
 
 ## Screenshots
 
-![Screenshot](https://github.com/Bastiaantjuhh/what-is-my-ip/blob/master/.github/screenshot.png)
+![Screenshot](https://github.com/Bastiaantjuhh/what-is-my-ip/blob/main/.github/screenshot.png)
 
 ## Installation
 
