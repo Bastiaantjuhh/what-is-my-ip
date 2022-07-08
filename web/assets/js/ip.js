@@ -1,3 +1,7 @@
+// Endpoints
+const endpointIPv4 = "https://ip4.seeip.org/json";
+const endpointIPv6 = "https://ip6.seeip.org/json";
+
 // Debugging for developig purposes
 const debugEnabled = true;
 
@@ -33,7 +37,7 @@ const ElememtIPv6 = document.getElementById("ipv6");
         await console.log("%c" + consoleMessageCallIPv4, consoleInfo); 
     }
 
-    await fetch("https://ip4.seeip.org/json")
+    await fetch(endpointIPv4)
         .then(res => res.json())
         .then(data => {
             const ipv4 = data["ip"];
@@ -53,7 +57,7 @@ const ElememtIPv6 = document.getElementById("ipv6");
     // Fetch IPv6
     if(debugEnabled == true) { await console.log("%c" + consoleMessageCallIPv6, consoleInfo); }
 
-    await fetch("https://ip6.seeip.org/json")
+    await fetch(endpointIPv6)
         .then(res => res.json())
         .then(data => {
             const ipv6 = data["ip"];
